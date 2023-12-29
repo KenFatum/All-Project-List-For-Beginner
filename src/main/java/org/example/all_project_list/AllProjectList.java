@@ -2,6 +2,7 @@ package org.example.all_project_list;
 
 import org.example.calculator.CalculatorDisplay;
 import org.example.guess_the_right_number.GuessTheRightNumber;
+import org.example.todo_list.ToDoListDisplay;
 
 import java.util.Scanner;
 
@@ -9,6 +10,7 @@ public class AllProjectList {
     Scanner scanner = new Scanner(System.in);
     CalculatorDisplay calculatorDisplay = new CalculatorDisplay();
     GuessTheRightNumber guessTheRightNumberDisplay = new GuessTheRightNumber();
+    ToDoListDisplay toDoListDisplay = new ToDoListDisplay();
     public void start() {
         System.out.println("Welcome to the ALL PROJECT LIST program! \n");
         System.out.println("This program will list all the projects that the creator did. \n");
@@ -34,7 +36,7 @@ public class AllProjectList {
             switch (option) {
                 case "1" -> calculatorDisplay.startCalculator();
                 case "2" -> guessTheRightNumberDisplay.startGuessTheRightNumber();
-                case "3" -> System.out.println("ToDo-List is not implemented yet!");
+                case "3" -> toDoListDisplay.startToDoList();
                 case "4" -> System.out.println("Currency converter is not implemented yet!");
                 case "5" -> System.out.println("Temperature converter is not implemented yet!");
                 case "6" -> System.out.println("Word Counter is not implemented yet!");
